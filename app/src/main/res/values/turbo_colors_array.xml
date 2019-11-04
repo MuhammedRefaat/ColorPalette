@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="turbo_colors">
+        <item>#00ffff</item>
+        <item>#00ff99</item>
+        <item>#ff0000</item>
+        <item>#fdff00</item>
+        <item>#ff2d57</item>
+    </string-array>
+</resources>

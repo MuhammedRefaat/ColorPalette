@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="black_white_colors">
+        <item>#ffffff</item>
+        <item>#cccccc</item>
+        <item>#aaaaaa</item>
+        <item>#919191</item>
+        <item>#414141</item>
+    </string-array>
+
+</resources>

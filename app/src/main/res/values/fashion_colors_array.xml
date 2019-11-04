@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="fashion_colors">
+        <item>#f59463</item>
+        <item>#e8c3a0</item>
+        <item>#ffedc4</item>
+        <item>#f4f5d5</item>
+        <item>#93e2ff</item>
+    </string-array>
+
+</resources>

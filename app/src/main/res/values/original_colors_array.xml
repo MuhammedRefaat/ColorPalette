@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array For My ColorPalette colors -->
+    <string-array name="colors">
+        <item>#FFFFFF</item>
+        <item>#000000</item>
+        <item>#F44336</item>
+        <item>#C62828</item>
+        <item>#D32F2F</item>
+        <item>#F06292</item>
+        <item>#AD1457</item>
+        <item>#C51162</item>
+        <item>#AB47BC</item>
+        <item>#4A148C</item>
+        <item>#AA00FF</item>
+        <item>#311B92</item>
+        <item>#7C4DFF</item>
+        <item>#6200EA</item>
+        <item>#3949AB</item>
+        <item>#304FFE</item>
+        <item>#2196F3</item>
+        <item>#0D47A1</item>
+        <item>#2962FF</item>
+        <item>#01579B</item>
+        <item>#0091EA</item>
+        <item>#00B8D4</item>
+        <item>#00E676</item>
+        <item>#69F0AE</item>
+        <item>#64DD17</item>
+        <item>#FFD600</item>
+        <item>#FFFF00</item>
+    </string-array>
+
+</resources>

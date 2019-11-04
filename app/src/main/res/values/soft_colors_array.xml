@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Array For My ColorPalette colors -->
+    <string-array name="soft_colors">
+        <item>#b5e5cc</item>
+        <item>#794044</item>
+        <item>#cba00d</item>
+        <item>#c6e6ca</item>
+        <item>#f8eef6</item>
+        <item>#f6e7f3</item>
+        <item>#f4e1f0</item>
+        <item>#e2e9c3</item>
+        <item>#d0db9e</item>
+        <item>#edd1e1</item>
+        <item>#e3c5c5</item>
+        <item>#d248a2</item>
+        <item>#8f20b6</item>
+        <item>#b8677a</item>
+        <item>#d1c9c9</item>
+        <item>#ffb3a6</item>
+        <item>#000000</item>
+        <item>#bcbec0</item>
+        <item>#2836f4</item>
+        <item>#f4e628</item>
+        <item>#9cf428</item>
+        <item>#0fba23</item>
+        <item>#00eb9b</item>
+        <item>#9bc1cc</item>
+        <item>#00604a</item>
+        <item>#e9c58d</item>
+        <item>#f5dab5</item>
+        <item>#625b62</item>
+        <item>#883444</item>
+        <item>#fdcc94</item>
+        <item>#353c44</item>
+        <item>#924154</item>
+        <item>#955e40</item>
+        <item>#c6c9d3</item>
+        <item>#d1c9c9</item>
+        <item>#e28cc5</item>
+        <item>#ea35b0</item>
+        <item>#0999aa</item>
+    </string-array>
+
+</resources>
