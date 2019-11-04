@@ -26,7 +26,7 @@ for Gradle:
   
   for Maven:
   
-  <dependency>
+        <dependency>
 	    <groupId>com.github.MuhammedRefaat</groupId>
 	    <artifactId>ColorPalette</artifactId>
 	    <version>1.0</version>
