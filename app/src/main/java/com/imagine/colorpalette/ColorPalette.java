@@ -10,6 +10,7 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
@@ -33,6 +34,7 @@ public class ColorPalette extends HorizontalScrollView implements View.OnClickLi
     public static final int FASHION_COLORS = 2;
     public static final int TURBO_COLORS = 3;
     public static final int BLACK_WHITE_COLORS = 4;
+    private int height = ViewGroup.LayoutParams.MATCH_PARENT;
 
     @IntDef(value = {ORIGINAL_COLORS, SOFT_COLORS, FASHION_COLORS, TURBO_COLORS, BLACK_WHITE_COLORS})
     @interface ColorPalettsSelections {
@@ -90,9 +92,20 @@ public class ColorPalette extends HorizontalScrollView implements View.OnClickLi
      * creating and setting att.s for the linear layout
      */
     private void setTheContainer() {
+        // first, check for height change
+        height = LinearLayout.LayoutParams.MATCH_PARENT;
+        ViewGroup.LayoutParams parentLayoutParams = this.getLayoutParams();
+        try {
+            if (parentLayoutParams.height != ViewGroup.LayoutParams.MATCH_PARENT &&
+                    parentLayoutParams.height != ViewGroup.LayoutParams.WRAP_CONTENT)
+                height = parentLayoutParams.height;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        // Now, Apply the changes
         colorsContainer = new LinearLayout(context);
         colorsContainer.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                LinearLayout.LayoutParams.MATCH_PARENT));
+                height));
         colorsContainer.setGravity(Gravity.CENTER_VERTICAL);
         colorsContainer.setOrientation(LinearLayout.HORIZONTAL);
         this.addView(colorsContainer);
@@ -172,6 +185,22 @@ public class ColorPalette extends HorizontalScrollView implements View.OnClickLi
         colorLayout.setTag(colorValue);
         // setting the onCLick Listener for the color selection
         colorLayout.setOnClickListener(this);
+        // check for height changes
+        if (height != ViewGroup.LayoutParams.MATCH_PARENT) {
+            try {
+                // set colorFrame height
+                LinearLayout.LayoutParams colorFrameLp = (LinearLayout.LayoutParams) colorFrame.getLayoutParams();
+                colorFrameLp.height = height;
+                colorFrame.setLayoutParams(colorFrameLp);
+                // set colorElement height
+                int colorElementHeight = (int) (height * 0.58333333333);
+                LinearLayout.LayoutParams colorElementLp = (LinearLayout.LayoutParams) color.getLayoutParams();
+                colorElementLp.height = colorElementHeight;
+                color.setLayoutParams(colorElementLp);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
     }
 
     /**

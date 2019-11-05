@@ -17,4 +17,5 @@
             <enum name="blackAndWhite" value="4" />
         </attr>
     </declare-styleable>
+
 </resources>
