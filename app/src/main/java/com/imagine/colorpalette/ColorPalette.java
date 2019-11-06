@@ -317,7 +317,7 @@ public class ColorPalette extends HorizontalScrollView implements View.OnClickLi
         try {
             String selectedColor = v.getTag().toString().trim();
             selectColor(selectedColor);
-            setSelectedColor(Color.parseColor(selectedColor));
+            this.selectedColor = Color.parseColor(selectedColor);
             mListener.onColorSelected(selectedColor);
         } catch (Exception ex) {
             ex.printStackTrace();
