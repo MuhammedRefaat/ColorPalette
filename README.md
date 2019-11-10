@@ -4,7 +4,7 @@ Customizable Color Palette Library
 You can use this library to add customizable color palette to your Android application, which comes with an attractive sets of colors to be used for the palette, in addition to a nice UI for displaying the color palette.
 
 
-![](https://ibb.co/tHssnhM)
+![screenshot](https://ibb.co/tHssnhM)
 
 
 ## How to include the Library in your application:
