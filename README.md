@@ -34,7 +34,7 @@ Add it in your root build.gradle at the end of repositories:
 ***for Gradle:***
 
 	dependencies {
-	        implementation 'com.github.MuhammedRefaat:ColorPalette:Tag'
+	        implementation 'com.github.MuhammedRefaat:ColorPalette:1.4'
 	}
   
 ***for Maven:***
@@ -42,14 +42,59 @@ Add it in your root build.gradle at the end of repositories:
     <dependency>
 	    <groupId>com.github.MuhammedRefaat</groupId>
 	    <artifactId>ColorPalette</artifactId>
-	    <version>Tag</version>
+	    <version>1.4</version>
 	</dependency>
 
 
 ## How to use the Library:
 
-    <com.imagine.colorpalette.ColorPalette
+   **Define the ColorPalette**
+    
+   ***in XML:***
+    
+    <com.imagine.colorpalette.ColorPalette xmlns:colorPalette="http://schemas.android.com/apk/res-auto"
         android:id="@+id/color_palette4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         colorPalette:palette="blackAndWhite" />
+	
+   ***in Java***
+    
+     ColorPalette colorPalette = findViewById(R.id.color_palette1);
+     colorPalette.setListener(onColorSelected);
+	
+     /**
+     * The colorSelection Listener (returns the Hex value for that color)
+     */
+    ColorPalette.ColorSelectListener onColorSelected = new ColorPalette.ColorSelectListener() {
+        @Override
+        public void onColorSelected(String color) {
+            // TODO use color (The Hex Value of the Selected color)
+            Toast.makeText(MainActivity.this, "Selected Color HeX:" + color, Toast.LENGTH_SHORT).show();
+        }
+    };
+    
+   **Customize the ColorPalette**	
+	
+   ***Add Color:***
+	
+    colorPalette.addColor(String coloeHexValue, boolean allowDuplication);
+	
+   ***Remove Color By HEX Value:***
+	
+    colorPalette.removeColorByHexValue("#FFFFFF");
+
+   ***Remove color By Index:***
+   
+    colorPalette.removeColorByIndex(1);
+    
+   ***Set Selected Color by Hex value or color Int value:***
+   
+    colorPalette.setSelectedColor(String colorHexValue);
+    colorPalette.setSelectedColor(colorIntValue);
+    
+   ***Get Selected Color:***
+   
+    colorPalette.getSelectedColor();
+    
+    
