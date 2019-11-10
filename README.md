@@ -3,6 +3,10 @@ Customizable Color Palette Library
 
 You can use this library to add customizable color palette to your Android application, which comes with an attractive sets of colors to be used for the palette, in addition to a nice UI for displaying the color palette.
 
+
+![](https://ibb.co/tHssnhM)
+
+
 ## How to include the Library in your application:
 
 **Step 1. Add the JitPack repository to your build file (project level)**
@@ -98,3 +102,7 @@ Add it in your root build.gradle at the end of repositories:
     colorPalette.getSelectedColor();
     
     
+    
+   *Sample App:*
+	
+   [ColorPaletteSample](https://github.com/MuhammedRefaat/ColorPaletteSample.git)
