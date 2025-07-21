@@ -1,4 +1,4 @@
-# Before everything, let's do what is more important that software development and show facts
+# Before everything, let's do what is more important than software development and show facts
 [![Stand With Palestine](https://raw.githubusercontent.com/TheBSD/StandWithPalestine/main/banner-no-action.svg)](https://thebsd.github.io/StandWithPalestine)
 
 # ColorPalette
